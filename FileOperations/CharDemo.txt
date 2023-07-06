@@ -1,0 +1,322 @@
+
+pdf.files.base.location=/opt/appdata/WrapperService/
+#pdf.files.base.location=/home/rishikesh.patil/Desktop/UAT/Reports/
+
+# N2P URLs
+wrapperBRE_FOS_URL=https://bizapps-n2p.bajajhousingfinance.in/executionserver/rest/1/ruleServices/BHFL_DLRM_FOS/versions/0.0.1-SNAPSHOT/rules/BHFL_DLRM_FOS/FOS_main/executions
+wrapperBRE_Eligibility_URL=https://bizapps-n2p.bajajhousingfinance.in/executionserver/rest/1/ruleServices/BHFL_Eligibility_Calculator/versions/0.0.1-SNAPSHOT/rules/BHFL_Eligibility_Calculator/eligibility_main/executions
+wrapperCibil_URL=https://bizapps-n2p.bajajhousingfinance.in/CIBILRestWS/rest/cibil
+wrapperMOF_URL=https://bizapps-n2p.bajajhousingfinance.in/pff-api/services/finInstructionRest/loanInstructionService/feePayment
+
+
+# PROD URLs
+#wrapperBRE_FOS_URL=https://bizapps.bajajhousingfinance.in/executionserver/rest/1/ruleServices/BHFL_DLRM_FOS/versions/0.0.1-SNAPSHOT/rules/BHFL_DLRM_FOS/FOS_main/executions
+#wrapperBRE_Eligibility_URL=https://bizapps.bajajhousingfinance.in/executionserver/rest/1/ruleServices/BHFL_Eligibility_Calculator/versions/0.0.1-SNAPSHOT/rules/BHFL_Eligibility_Calculator/eligibility_main/executions
+#wrapperCibil_URL=https://bizapps.bajajhousingfinance.in/CIBILRestWS/rest/cibil
+#wrapperMOF_URL=https://bizapps.bajajhousingfinance.in/pff-api/services/finInstructionRest/loanInstructionService/feePayment
+
+# PROD URLs
+#wrapperBRE_FOS_URL=https://bizapps.bajajhousingfinance.in/ruleServices/BHFL_DLRM_FOS/versions/0.0.1-SNAPSHOT/rules/BHFL_DLRM_FOS/FOS_main/executions
+#wrapperBRE_Eligibility_URL=https://bizapps.bajajhousingfinance.in/ruleServices/BHFL_Eligibility_Calculator/versions/0.0.1-SNAPSHOT/rules/BHFL_Eligibility_Calculator/eligibility_main/executions
+#wrapperCibil_URL=https://bizapps.bajajhousingfinance.in/CIBILRestWS/rest/cibil
+
+content.type=application/json
+
+wrapperBRE_Authorization=3CE777AAA0E18431C9D2ABBAC09F53DDBE5F38829D1FE02CE0DBD9288E952BC3A71A7FE2EEA9CCE02F354CA60F50D464
+mof_Authorization=326905CF1BF66F8BE2547564443E5CF35AB4683E328910567A8A32E8A1FF57F91EB81477D0C50E45874B1166E2E3B4CC
+
+authentication.required=true
+authentication.entity.amura=amura
+authentication.entity.ehomeloan=ehomeloan
+authentication.ehomeloan.cibil=35C9EC9CF98BA8B90F32FBD50F4677B0EFCA70F94033ECC02E3923C631A3E77A1EB81477D0C50E45874B1166E2E3B4CC
+authentication.ehomeloan.eligibility=6392127D6CAD54393BFA6E82DD175215ACC90FDEBF592397905457D972490F581EB81477D0C50E45874B1166E2E3B4CC
+authentication.ehomeloan.fos=65D2B4185D177122C636AF1856F260E09B466053473C5EA380989B44690E52ED1EB81477D0C50E45874B1166E2E3B4CC
+authentication.ehomeloan.mof=1ED3F54632F42D8F9FCA0FC3CBA31E3A0473FDA15EA11BF2FEDA2B2F256206A61EB81477D0C50E45874B1166E2E3B4CC
+
+authentication.amura.cibil=F364BEBAC0A6B539913946132397BE69A5778EAFA261E635603FD3A8EBDFFCD21EB81477D0C50E45874B1166E2E3B4CC
+authentication.amura.eligibility=5E5DBDACD1F521BF74291C2A41631F7340E777BCC2899849645C237556FC64B51EB81477D0C50E45874B1166E2E3B4CC
+authentication.amura.fos=6DA59E7CE10D11FF443ADAC538B4375B5DB940EC911026F62389A26255D3D70F1EB81477D0C50E45874B1166E2E3B4CC
+authentication.amura.mof=569F9E1E67101B8A91CEE91F97A42736FA26994CCF7488B5E473E01272B99D601EB81477D0C50E45874B1166E2E3B4CC
+
+authentication.report=AFE22D36514D52E650806B431A3DECC2A1917C691AF802B6B3A2035F1C5B92FA1EB81477D0C50E45874B1166E2E3B4CC
+#########WhatsApp Configuration Starts
+authentication.entity.mobileapp=mobileapp
+authentication.mobileapp.checkoptin=VzhLYY!dy'%<Ve~8FT&Z.J8B;D:!<t)/
+authentication.mobileapp.optin=pF!b]WfnVtcu<WT6gpNz)y7J3%,:vK%F
+## Local
+#wrapper_checkoptin=http://localhost:8081/WhatsappAPIServices/BHFL/checkoptin
+#wrapper_optin=http://localhost:8081/WhatsappAPIServices/BHFL/optin
+## UAT
+wrapper_checkoptin=https://bizapps-n2p.bajajhousingfinance.in/WhatsappAPIServices/BHFL/checkoptin
+wrapper_optin=https://bizapps-n2p.bajajhousingfinance.in/WhatsappAPIServices/BHFL/optin
+#########CRM Case Creation Configuration Starts
+#wrapper.crm.case.url=https://bflcrm--pcsb.cs5.my.salesforce.com/services/apexrest/api/CaseCreation
+wrapper.crm.case.url=https://bflcrm--pcsb.my.salesforce.com/services/apexrest/api/CaseCreation
+authentication.mobileapp.crm.case=kM'}2#wr/Njpq>,'3h,SJD5psKMn2gS%
+#crm.case.authorization.value=OAuth 00DO00000055G8K!AQIAQLq6gKh5Ota0DtFhGXiup7Ui9oqfj5N1eUnNzFnyuNwEWig_PcYYm_VpPqb0YEMN6LaP0MtLuv.jj80.uFKRT4c10ZmZ
+crm.case.authorization.value=OAuth 00DO00000055G8K!AQIAQFU9VfbcDbNuGmn6kZFoJMHF482hfl2F7by6xVj6jLklhsXC1lE7ynHQ2cAr.7B3rgyw08BNrQQqYoI4bHER638ZIiLD
+INSERT.CRM.REQUEST=INSERT INTO PDP.REQUEST_STATUS(SFDC_ID,SNO,REQUEST_NO,LAN,CIF,REQUEST_STATUS,CREATED_TIME,REQUEST_TYPE,SOURCE,DESCRIPTION) VALUES (?,?,?,?,?,?,?,?,?,?)
+#########Proxy host for bhfl starts
+proxy.flag=Y
+proxy.host=proxy.mgmt.bajajhousingfinance.in
+proxy.port=3128
+#########Customer Feedback Configuration starts
+authentication.mobileapp.feedback=Q?28+A9ypG{/F%z@5u^W9f~4;7DtXM,?
+#wrapper_feedback_url=http://localhost:8081/WhatsappAPIServices/BHFL/CustFeedback
+wrapper_feedback_url=https://bizapps-n2p.bajajhousingfinance.in/WhatsappAPIServices/BHFL/optin/CustFeedback
+
+API.CONNECTION.TIMEOUT=600000
+API.READ.TIMEOUT=600000
+URL.VALIDATE.LOGIN=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/validateLogin
+URL.LOGIN=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/login
+URL.SENDOTP=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/sendotp
+sendotp.authorization=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+
+URL.SETMPIN=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/setmpin
+URL.SECURITY.OPTION=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/security/option/update
+URL.VALIDATEOTP=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/validateotp
+URL.BRANCH.LOCATOR=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/getBranchDetailsList
+URL.VALIDATEOTP.WITHOUT.TOKEN=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/validateotp/withoutToken
+
+#########Customer Request Status Configuration starts
+authentication.mobileapp.custreqstatus=K))pY%@4VSKjNk5%[4^/y3Nz,He_'Kmj
+wrapper.custreqstatus.url=https://bizapps-n2p.bajajhousingfinance.in/WhatsappAPIServices/BHFL/optin/CustReqStatus
+
+#########Statements Configuration starts
+authentication.mobileapp.statement=8z!4+zm5~37yVY*AyCs6q5;}Pf"MQLDQ
+wrapper.statment.url=https://oneweb-n2p.bajajhousingfinance.in/statements/services/getStatement
+authorization.getstmt.value=Basic YWRtaW46cGFzc3dvcmQ=
+#wrapper.statment.url=https://bizapps.bajajhousingfinance.in/pff-api/services/statementRest/statementService/getStatement
+#authorization.getstmt.value=dXNlcjpCSEZMOkJhamFqRkAxMjM=
+#statement.getStatement.entityid=1
+#statement.getStatement.serviceversion=1
+#statement.getStatement.servicename=getStatement
+#statement.getStatement.language=EN
+
+#########DMS Configuration starts
+authentication.mobileapp.dms=4LeAAtr?[UZ}!TvZwRR-.wg[UUde9&Ju
+wrapper.dms.url=https://bizapps.bajajhousingfinance.in/DMSServiceWS/Services/fetchDocument
+
+## Track loan application
+#edw.querytofetch.loanstatusdata=SELECT loan_reference_number, business_vertical, product_code, fianance_type, branch_id, sourcing_branch, entitycode, customer_id, repayment_method, asm_id, bagic_comprehensive_care, bagic_my_home, bagic_personal_accident, bajaj_suraksha, bhfl_cpp_life_care, bhfl_elite_card_configuration, bhfl_iho_property_care, comprehensive_care, cpp_wallet_protect, elite_2000, elite_2499, elite_4999, ffr_report, gcpp, group_credit_protect, hard_copy_property_dossier, iho_health_service, iho_bfsd, icici_pru_gls, super_combi_liv_care, tata_aig_group_credit_secure, amc_fee, commitment_fee, convenience_fees, orgination_fee, stamp_fee, disb_date, loan_status, login_date, reject_date, login_loan_amount, repay_frq, nextrolecode, stage, revised_stage, stage_change_date, mobile_number, date_of_birth, applicant_pan, total_loan_amount, finance_amount, product_name, tenure, roi, fianance_branch, cust_cif, asm_name, tranch_id, tranch_disbursement_date, tranch_disbursed_amt, property_name, property_address_line1, property_address_line2, property_address_line3, property_pincode, property_city, property_state, emi_amount 	FROM track_your_application_final WHERE (LOAN_REFERENCE_NUMBER = ? OR MOBILE_NUMBER = ? ) AND (trunc(DATE_OF_BIRTH) = ? OR APPLICANT_PAN = ? ) 
+edw.querytofetch.loanstatusdata=SELECT LOAN_REFERENCE_NUMBER, CUSTOMER_ID, CUST_CIF, MOBILE_NUMBER, DATE_OF_BIRTH, APPLICANT_PAN, PRODUCT_NAME, TENURE, ROI, REPAYMENT_METHOD, REPAY_FRQ, FIANANCE_TYPE, FIANANCE_BRANCH, LOGIN_LOAN_AMOUNT, TOTAL_LOAN_AMOUNT, CREDIT_APPROVED_LOAN_AMOUNT, FINANCE_AMOUNT, EMI_AMOUNT, AMC_FEE, COMMITMENT_FEE, CONVENIENCE_FEES, ORGINATION_FEE, STAMP_FEE, LOGIN_DATE, LOAN_STATUS, DISB_DATE, REJECT_DATE, NEXTROLECODE, TRANCH_ID, TRANCH_DISBURSED_AMT, TRANCH_DISBURSEMENT_DATE, STAGE_CHANGE_DATE, STAGE, REVISED_STAGE, STAGE_TO_BE_SHOWN_TO_CUSTOMER_ON_PORTAL, TEXT_TO_BE_SHOWN_ON_PORTAL, ENTITYCODE 	FROM BHFL_API.TRACK_YOUR_APPLICATION_FINAL WHERE (LOAN_REFERENCE_NUMBER = ? OR MOBILE_NUMBER = ? ) AND (COALESCE(CAST(DATE_OF_BIRTH AS TEXT),'')=? OR APPLICANT_PAN = ? )
+
+#edw.querytofetch.feedetails=SELECT loan_reference_number LAN,amc_fee AMC_FEE,commitment_fee COMM_FEE,convenience_fees CONV_FEES,orgination_fee ORG_FEE,stamp_fee STAMP_FEE FROM track_your_application_final WHERE loan_reference_number = ?
+edw.querytofetch.feedetails=SELECT loan_reference_number LAN,amc_fee AMC_FEE,commitment_fee COMM_FEE,convenience_fees CONV_FEES,orgination_fee ORG_FEE,stamp_fee STAMP_FEE FROM bhfl_api.track_your_application_final WHERE loan_reference_number = ?
+authentication.mobileapp.trackapplication=GnyDACfuvQ9xAM/4T#Eu"naQd:f!hd(C
+
+edw.querytofetch.customertext=SELECT REVISED_STAGE, STAGE, CUSTOMER_TEXT FROM BHFL_API.TRACK_APPLN_CUST_TEXT WHERE REVISED_STAGE=?
+#edw.querytofetch.customertext=SELECT REVISED_STAGE, STAGE, CUSTOMER_TEXT FROM TRACK_APPLN_CUST_TEXT WHERE REVISED_STAGE=?
+
+#------------------------EDW UAT database information----------------------
+edw.postgres.driver=org.postgresql.Driver
+edw.username=bhfl_api
+edw.password=TcAhYb4t65
+edw.port=5432
+edw.sid=postgres
+edw.host=jdbc:postgresql://bhfln2pcl.cvzvxdoajkfz.ap-south-1.rds.amazonaws.com
+#**************** Portal UAT Database Information************************
+portal.jdbc.url=oracle.jdbc.driver.OracleDriver
+portal.username=PDP
+portal.password=Pdp_2018
+portal.port=1521
+portal.sid=blmsn2p
+portal.host=jdbc:oracle:thin:@blmsn2p01.cvzvxdoajkfz.ap-south-1.rds.amazonaws.com
+
+#########Drawdown Configuration starts
+authentication.mobileapp.drawdown=8z!4+zm5~37yVY*AyCs6q5;}Pf"MQLDQ
+wrapper.drawdown.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/addDisbursement
+#authorization.makedrawdown.value=Basic YWRtaW46cGFzc3dvcmQ=
+#########Refer and Earn Configuration starts
+create.compaign.authorization=Q?28+A9ypG{/F%z@5u^W9f~4;7DtXM,?
+create.compaign.endpoint.authorization=ERbFnn9hI7lrVQdIr2nOrhPJYp6ca78aHi6dqv9PNHp+LqQcfIhhsF+17wjUvlI9+giBwE2fUdI3jgxO1LFw5tlQ4MK1NxyGaU8Ch:5sJ4+x40PLhEUYZgYwceTjRSNc3j:Zyfqxuqi+At+hYnKsF4X4q+arbMLhFa78M1l77ne1cIPs:fnjEY6FSyQY5lt4TSiX1wSq6PDJGbs8Dlk9NwLiizYzfoh6Wl0D8l9zqPuHHXngZX3W2Pbx2dNrCn7YYgCEU2DjHw0KLA+9KLN5XoiltnwMSJPkaBB6ONw2j:1lDiB9fSWDzm+:Jxhgws4DHOpO+feWizhlfSDcdBDv2HVYuTg0sOl2STykDbKmAKEC+QvEIT9uEKtID4jAVtyI9qj47bZS6WbWOFbexbVYtLVf7wu3tUrJTTUgVlmuaakW2SJ5r93Um1WxTpXn9XOTg3+GSH6SNBcwCOPplca7NwnzrauWwEzhfkeWL3ueOBq+B3ViO4ESVL7QSyjMWMbP4PjBbzYLHpxiE0wtz:DIW3XD1FH75btACrFTKiksujA=
+create.compaign.update.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/campaignService/createCampaign
+
+#Perform Login
+performlogin.endpoint.authorization=EcHXHVVYNrqZjdkbRtK4+Fx4:iMust6Z3ug8jN7lJjuxWLXxq0H1bUGP013b6pi87xl9CMG2+MWY5ZLLz32o8mNhxPIKTtmmh:BNu6cC:RBHKf2KUEENEBfwpJjX+MWp25aKvU1Got:LfkNdPOh5:ShF1WrtRKalq5OqHGmtpYq+HNy+nE5lQZjT0cWzWP7Bt9OPbms1GVE+sloS3psH1Zp3xvZdiW22X7ukCYHHGtrKqGb2vhvVExveHFCDC7tMsIKcnYUCVzJot7X2O7koQuOcKoPxvnJ2tg7zVjRvxuEaGyyTDhJnGCktlbEz52FcUx2v7NzBVWkcUS1c0mnFTczSZ1ee3kKHV5jUKgSdu4nLRaR9NcD:9rY43flOWfBMaUSyYYlybPPUvcafOgw6G9j3poeyna9H:YAiFjWgNUZySYS8U37ri54kwbFRjsNdjOWZ1+++xbIZA0AkiD116Gh8HDPseugWhl6fNE:8IkA=
+performlogin.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/performLogin
+performlogin.logintype=cifpwd
+##Pass@123-r3148GFMZbNdsV83chC6ADHhox7TyfgZHrmnE6gV398=
+#performlogin.loginvalue=r3148GFMZbNdsV83chC6ADHhox7TyfgZHrmnE6gV398=
+##Bajaj@123-nMO1U61Tb2N2x0h7SrDn56c6fwtW6pEds31LxNN2D6U=
+performlogin.loginvalue=nMO1U61Tb2N2x0h7SrDn56c6fwtW6pEds31LxNN2D6U=
+#performlogin.otpcif=100242
+performlogin.otpcif=vu3DhcCg6Py0diTcYNQNDg==
+performlogin.userLoginType=cif
+performlogin.userid=vu3DhcCg6Py0diTcYNQNDg==
+
+#validateotp
+validateotpwithouttoken.endpoint.tokenid=Pr4nwDqL
+validateotpwithouttoken.authorization=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+validateotpwithouttoken.endpoint.url=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/validateotp/withoutToken
+
+#Product request
+submit.product.authorization=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+submit.product.endpoint.authorization=IfimSEASJzkjuF2eEOYel3FeqCMVJXeyLMNrJk8Tn65E9oWEQUpigtjS8BlQwOTcZ2JKP5aOWEdcfy3NoRB7X5aVS3NTAuwu1VOOTt8DfHFchf9Urtcirg7D1HtOd5YfpO61ct8z:nq3Dsj+t6npCqosJwfAw93+ipyfarQ9mjg8GnpP4K+YQjpTUz9idgOxBOTRme3cr4S+FHl:ISn+ir1VTL985oe8ehYGq1DgGYKE2BUgdQ2IeYgqd2mov4QxSy32SgGPuBwgpG7RyKE:i2gFCqPZ629YYUmsmr2EYZu95Ftcl3mSRKIwllX7pVK4:u3WnAbL4Z1pvB5gdI2rjp+el9VD4G449Vc6qvgswLdGIzkKVr1uUuAsshCTOYDS
+submit.product.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/submitProductRequest
+
+# VAS Insurance and Assist
+VAS.WRAPPER.AUTHORIZATION=Q?28+A9ypG{/F%z@5u^W9f~4;7DtXM,?
+VAS.ENDPOINT.URL=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/VAS
+#logout
+logout.authorization.value=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+logout.endpoint.tokenid=Pr4nwDqL
+logout.endpoint.url=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/logout
+#fetch document
+fetchDoc.authorization=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+fetchDoc.endpoint.authorization=kJXyMC9ASgiLvuilOmJ1ShDAJbcApNKvcDzK01efhudPsqJpm14YDlfkqNvMQGXJG0WOZlhMs5OQx0ZgA:KiPyftDGCcm2J:RTY730:SLTS4c7O6b6NXoqVgWhCMaou+
+fetchDoc.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/DMSService/fetchDoc
+#================================================================================================
+#----------------------------BOT SERVIC--------------------------------------------------
+# N2P Mobile Database Details
+oracle.db.driver=oracle.jdbc.driver.OracleDriver
+mob.db.url=jdbc:oracle:thin:@blmsn2p03.cvzvxdoajkfz.ap-south-1.rds.amazonaws.com:1521:blmsn2p
+mob.db.user=MOBILE_APP
+mob.db.password=ZXcv##bn
+
+# N2P LMS Database Details
+lms.db.url=jdbc:oracle:thin:@blmsn2p02.cvzvxdoajkfz.ap-south-1.rds.amazonaws.com:1521:blmsn2p
+lms.db.user=BHFL_API
+lms.db.password=Bhfl_321
+
+api.auth.key=a406c8fcc555bd154838f26c36106503
+
+#N2P Statement
+statement.endpoint.url=https://oneweb-n2p.bajajhousingfinance.in/statements/services/getStatement
+statement.auth=Basic YWRtaW46cGFzc3dvcmQ=
+
+#---------------- Bitly Link UAT Environment----------------------------
+bitly.endpointurl=https://bizapps.bajajhousingfinance.in
+bitly.accessurl=/Bitly/Services/shortlink
+wrapper.statement.endpoint.url=https://customer-n2p.bajajhousingfinance.in/MobileAppWrapper/Services/statement/getStatement
+wrapper.vas.link.endpoint.url=https://customer-n2p.bajajhousingfinance.in/MobileAppWrapper/Services
+
+#UAT List Of Pending Docs
+pending.doc.authorization=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+pending.doc.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/DMSService/fetchDocByRef/
+
+#Production Get Profile
+profile.authorization=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+profile.get.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/getProfile
+profile.fetchaddress.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/CollateralService/fetchAddressByRef/
+profile.update.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/updateProfile
+
+# UAT send OTP for drawdown
+drawdown.sendotp.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/sendExtOTP
+
+# UAT verify OTP for drawdown
+drawdown.validateotp.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/validateOtp
+
+###Pre-approved offers
+pre.approvedoffers.auth=OAuth 00DO00000055G8K!AQIAQD9K4O79IGP57CLdcxygxnh0pioT02fyRpYPjhgrBfpOngYN1jaOOqK68CmV4YC5RAqedTQl.TFxLn5NwFgb7k_wtyId
+
+#getleaddeatils
+offers.getleaddetails.endpoint.auth=dXNlcjpBRE1JTjpKYW5AMjAxOQ==
+offers.getleaddetails.endpoint.url=https://oneweb-n2p.bajajhousingfinance.in/plms-api/services/leadDetailRest/getLeadDetails
+offers.getleaddetails.messageid=12342112sws22111211ww
+offers.getleaddetails.entityid=1
+offers.getleaddetails.serviceversion=1
+offers.getleaddetails.servicename=getLeadDetails
+offers.getleaddetails.language=EN
+offers.getleaddetails.requesttime=2017-11-17T00:00:00
+
+#calculateFOS
+offers.calculatefos.endpoint.auth=dXNlcjpBRE1JTjpKYW5AMjAxOQ==
+offers.calculatefos.endpoint.url=https://oneweb-n2p.bajajhousingfinance.in/plms-api/services/fosRest/calculateFOS
+offers.calculatefos.messageid=7475
+offers.calculatefos.entityid=1
+offers.calculatefos.serviceversion=1
+offers.calculatefos.servicename=calculateFOS
+offers.calculatefos.language=EN
+offers.calculatefos.requesttime=2017-11-17T00:00:00
+
+
+#Create Offer
+offers.createoffer.endpoint.auth=dXNlcjpBRE1JTjpKYW5AMjAxOQ==
+offers.createoffer.endpoint.url=https://oneweb-n2p.bajajhousingfinance.in/plms-api/services/createOfferRest/createOffer
+offers.createoffer.messageid=941922112221
+offers.createoffer.entityid=1
+offers.createoffer.serviceversion=1
+offers.createoffer.servicename=createOffer
+offers.createoffer.language=EN
+offers.createoffer.requesttime=2017-11-17T00:00:00
+
+########COI Document EndPoint url
+#coidocument.endpoint.url=https://bajajuat.bajajallianz.com/web/service/api/BhflCoi?
+coidocument.endpoint.url=https://webpartner.bajajallianz.com/web/service/api/coiDL?
+
+########Customer Transaction
+customer.new.trans.endpoint.url=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/customerTransaction/generateBillDeskSdk
+customer.new.trans.endpoint.token=43822F892A1490794CC87023158963B6
+customer.update.trans.endpoint.url=https://bizapps-n2p.bajajhousingfinance.in/MobileAppServiceWS/Services/customerTransaction/updateCustomerTrans
+customer.update.trans.endpoint.token=43822F892A1490794CC87023158963B6
+customer.foreclosureletterdetails.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/getForeClosureLetterDetails
+customer.financedetailswithlan.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/getFinanceDetailsWithLan
+
+###### OTP Pennant API
+##SendOTPPennantNonLoggedIn
+sendotp.pennant.nonloggedin.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/validateMobileAndSendOtp
+sendotp.pennant.nonloggedin.authorization=8z!4+zm5~37yVY*AyCs6q5;}Pf"MQLDQ
+
+##SendOTPPennantLoggedIn
+sendotp.pennant.loggedin.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/sendExtOTP
+sendotp.pennant.loggedin.authorization=8z!4+zm5~37yVY*AyCs6q5;}Pf"MQLDQ
+
+##ValidateOTPPennant
+validateotp.pennant.endpoint.url=https://customer-n2p.bajajhousingfinance.in/pdp-api/validateOtp
+validateotp.pennant.authorization=8z!4+zm5~37yVY*AyCs6q5;}Pf"MQLDQ
+
+################################# Fincity Integration
+#### Create Individual Customer
+auth.entity.fincity=fincity
+auth.createcustomerind.wrapper.fincity=Q?28+A9ypG{/F%z@5u^W9f~4;7DtXM,?
+url.createcustomerind.pennant=https://bizapps.bajajhousingfinance.in/pff-api/services/customerRest/customerService/createCustomer
+auth.createcustomerind.pennant=dXNlcjpPQ1JBUFA6UGVubmFudEAxMjM0
+msgid.createcustomerind.pennant=FINCITYCUST00000001
+servicename.createcustomerind.pennant=createCustomer
+entityid.createcustomerind.pennant=1
+serviceversion.createcustomerind.pennant=2
+language.createcustomerind.pennant=EN
+reqtime.createcustomerind.pennant=2021-05-25T02:00:00
+
+##### Create Collateral
+auth.createcollateral.wrapper.fincity=Q?28+A9ypG{/F%z@5u^W9f~4;7DtXM,?
+url.createcollateral.pennant=https://bizapps.bajajhousingfinance.in/pff-api/services/collateralRest/collateralService/createCollateral
+auth.createcollateral.pennant=dXNlcjpPQ1JBUFA6UGVubmFudEAxMjM0
+msgid.createcollateral.pennant=FINCITYKK00000006
+servicename.createcollateral.pennant=createCollateral
+entityid.createcollateral.pennant=1
+serviceversion.createcollateral.pennant=2
+language.createcollateral.pennant=EN
+reqtime.createcollateral.pennant=2021-05-25T02:00:00
+
+##### Create Finance
+auth.createfinance.wrapper.fincity=Q?28+A9ypG{/F%z@5u^W9f~4;7DtXM,?
+url.createfinance.pennant=https://bizapps.bajajhousingfinance.in/pff-api/services/createFinanceRest/finance/createFinance
+auth.createfinance.pennant=dXNlcjpPQ1JBUFA6UGVubmFudEAxMjM0
+msgid.createfinance.pennant=FINCITYLAN00000002
+servicename.createfinance.pennant=createFinance
+entityid.createfinance.pennant=1
+serviceversion.createfinance.pennant=2
+language.createfinance.pennant=EN
+reqtime.createfinance.pennant=2021-05-25T02:00:00
+################################# Xanadu Integration
+auth.entity.xanadu=xanadu
+auth.createcustomerind.wrapper.xanadu=8CY)Bv~C%3'DJ!J#)u(Sv8Bkdcx;AvJ>
+auth.createcollateral.wrapper.xanadu=8CY)Bv~C%3'DJ!J#)u(Sv8Bkdcx;AvJ>
+auth.createfinance.wrapper.xanadu=8CY)Bv~C%3'DJ!J#)u(Sv8Bkdcx;AvJ>
+################################# Four B Network Integration
+auth.entity.4bnetwork=fourbnetwork
+auth.createcustomerind.wrapper.4bnetwork=uRgZ@,akEr&2YQa{"J^nXAtFzHmpd2N6
+auth.createcollateral.wrapper.4bnetwork=uRgZ@,akEr&2YQa{"J^nXAtFzHmpd2N6
+auth.createfinance.wrapper.4bnetwork=uRgZ@,akEr&2YQa{"J^nXAtFzHmpd2N6
+################################# BASICHOMELOAN Integration
+auth.entity.basichomeloan=BASICHOMELOAN
+auth.createcustomerind.wrapper.basichomeloan=JGKk3RSa-#~HD-dNUD[8W?,bg44t2hG8
+auth.createcollateral.wrapper.basichomeloan=JGKk3RSa-#~HD-dNUD[8W?,bg44t2hG8
+auth.createfinance.wrapper.basichomeloan=JGKk3RSa-#~HD-dNUD[8W?,bg44t2hG8
+################################# REFERLOANPVTLTD  Integration
+auth.entity.referloanpvtltd=REFERLOANPVTLTD
+auth.createcustomerind.wrapper.referloanpvtltd=ZCBd2TG694FBzp7pShhFZmKLC9yEgATB
+auth.createcollateral.wrapper.referloanpvtltd=ZCBd2TG694FBzp7pShhFZmKLC9yEgATB
+auth.createfinance.wrapper.referloanpvtltd=ZCBd2TG694FBzp7pShhFZmKLC9yEgATB

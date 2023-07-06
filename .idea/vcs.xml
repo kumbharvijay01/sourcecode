@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/File-Handling-In-Java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/OperatorDemo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mysql-jdbc-example" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/simple-servlet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/simple-servlet/simple-servlet" vcs="Git" />
+  </component>
+</project>
