@@ -20,10 +20,8 @@ public class DefaultConstructorDemo {
 	public DefaultConstructorDemo() {
 		super();
 		System.out.println("Default Contructor called by the JVM");
-		
+
 	}
-	
-	
 
 //	DefaultConstructorDemo() {
 //		x = 2000;
@@ -46,7 +44,7 @@ public class DefaultConstructorDemo {
 	public static void main(String[] args) {
 
 		DefaultConstructorDemo constructorDemo = new DefaultConstructorDemo();
-		DefaultConstructorDemo constructorDemo2=new DefaultConstructorDemo(1,true,'C'); 
+		DefaultConstructorDemo constructorDemo2 = new DefaultConstructorDemo(1, true, 'C');
 //		DefaultConstructorDemo obj1 = new DefaultConstructorDemo();
 //		DefaultConstructorDemo obj2 = new DefaultConstructorDemo(10);
 //		System.out.println("OBject 1 Value of X " + obj1.x);
@@ -61,19 +59,17 @@ public class DefaultConstructorDemo {
 		System.out.println("Default ch Called " + constructorDemo2.ch);
 	}
 
-
-
-/**
- * @param x
- * @param flag
- * @param ch
- */
-public DefaultConstructorDemo(int x, boolean flag, char ch) {
-	super();
-	this.x = x;
-	this.flag = flag;
-	this.ch = ch;
-}
+	/**
+	 * @param x
+	 * @param flag
+	 * @param ch
+	 */
+	public DefaultConstructorDemo(int x, boolean flag, char ch) {
+		super();
+		this.x = x;
+		this.flag = flag;
+		this.ch = ch;
+	}
 
 	/**
 	 * 

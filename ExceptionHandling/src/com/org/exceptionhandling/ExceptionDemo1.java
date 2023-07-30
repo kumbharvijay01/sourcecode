@@ -36,7 +36,7 @@ public class ExceptionDemo1 {
 		System.out.println(exceptionDemo1.division1(a, b));
 
 		File file = new File("D:\\error3.html");
-
+		
 		if (file.exists()) {
 			System.out.println("File is availabe on Drive");
 		} else {

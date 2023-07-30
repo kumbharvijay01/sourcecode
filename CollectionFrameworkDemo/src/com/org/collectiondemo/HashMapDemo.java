@@ -22,7 +22,7 @@ public class HashMapDemo {
 		employee.setEmpId(1);
 		employee.setName("Sachin");
 		hashMap2.put(employee.getEmpId(), employee);
-		
+
 		employee = new Employee();
 		employee.setEmpId(2);
 		employee.setName("ABC");
@@ -35,7 +35,7 @@ public class HashMapDemo {
 //		System.out.println("Object Demo HashMAP : " + hashMap2);
 //		System.out.println("Size of HashMAP " + hashMap2.size());
 		Employee employee2 = null;
-		
+
 		for (Map.Entry<Integer, Employee> identifier : hashMap2.entrySet()) {
 			// Printing keys
 //			System.out.print(me.getKey() + ":");
@@ -43,12 +43,9 @@ public class HashMapDemo {
 			employee2 = hashMap2.get(identifier.getKey());
 			System.out.println(employee2.getEmpId());
 			System.out.println(employee2.getName());
-			if(employee2.getName()=="ABC")
-			{
+			if (employee2.getName() == "ABC") {
 				System.out.println("Condition OK");
 			}
-			
-				
 
 		}
 

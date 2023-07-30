@@ -14,7 +14,6 @@ public class ArrayDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
 		int a[] = new int[3];
 		int aa, bb, cc;
 		a[0] = 1;

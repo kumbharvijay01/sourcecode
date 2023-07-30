@@ -40,4 +40,9 @@ public class Employee {
 		Name = name;
 	}
 
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", Name=" + Name + "]";
+	}
+
 }

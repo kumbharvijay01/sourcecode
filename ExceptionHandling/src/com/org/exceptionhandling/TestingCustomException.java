@@ -42,7 +42,14 @@ public class TestingCustomException {
 		int age = scanner.nextInt();
 //		BufferedReader bufferedReader=new BufferedReader();
 		TestingCustomException customException = new TestingCustomException();
-		customException.validateAge(age);
+		try {
+			customException.validateAge(age);
+		} catch (InvalidDLAgeException e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+
 		System.out.println("Enter number to check negative Exception");
 		int number = scanner.nextInt();
 		try {

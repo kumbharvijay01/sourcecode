@@ -3,8 +3,6 @@
  */
 package com.org.abc.assignment;
 
-import java.util.Scanner;
-
 /**
  * @author vijaykumbhar
  *
@@ -14,6 +12,45 @@ public class Student {
 	private int rollNo;
 	private String name;
 	private int subject1, subject2, subject3, subject4;
+	private int totalMarks;
+	private float percentage;
+	private String grade;
+	private boolean promoted;
+	
+
+	/**
+	 * 
+	 */
+	public Student() {
+		super();
+	}
+
+	/**
+	 * @param rollNo
+	 * @param name
+	 * @param subject1
+	 * @param subject2
+	 * @param subject3
+	 * @param subject4
+	 * @param totalMarks
+	 * @param percentage
+	 * @param grade
+	 * @param promoted
+	 */
+	public Student(int rollNo, String name, int subject1, int subject2, int subject3, int subject4, int totalMarks,
+			float percentage, String grade, boolean promoted) {
+		super();
+		this.rollNo = rollNo;
+		this.name = name;
+		this.subject1 = subject1;
+		this.subject2 = subject2;
+		this.subject3 = subject3;
+		this.subject4 = subject4;
+		this.totalMarks = totalMarks;
+		this.percentage = percentage;
+		this.grade = grade;
+		this.promoted = promoted;
+	}
 
 	/**
 	 * @return the rollNo
@@ -99,67 +136,67 @@ public class Student {
 		this.subject4 = subject4;
 	}
 
+	/**
+	 * @return the totalMarks
+	 */
+	public int getTotalMarks() {
+		return totalMarks;
+	}
+
+	/**
+	 * @param totalMarks the totalMarks to set
+	 */
+	public void setTotalMarks(int totalMarks) {
+		this.totalMarks = totalMarks;
+	}
+
+	/**
+	 * @return the percentage
+	 */
+	public float getPercentage() {
+		return percentage;
+	}
+
+	/**
+	 * @param percentage the percentage to set
+	 */
+	public void setPercentage(float percentage) {
+		this.percentage = percentage;
+	}
+
+	/**
+	 * @return the grade
+	 */
+	public String getGrade() {
+		return grade;
+	}
+
+	/**
+	 * @param grade the grade to set
+	 */
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	/**
+	 * @return the promoted
+	 */
+	public boolean isPromoted() {
+		return promoted;
+	}
+
+	/**
+	 * @param promoted the promoted to set
+	 */
+	public void setPromoted(boolean promoted) {
+		this.promoted = promoted;
+	}
+
 	@Override
 	public String toString() {
 		return "Student [rollNo=" + rollNo + ", name=" + name + ", subject1=" + subject1 + ", subject2=" + subject2
-				+ ", subject3=" + subject3 + ", subject4=" + subject4 + "]";
+				+ ", subject3=" + subject3 + ", subject4=" + subject4 + ", totalMarks=" + totalMarks + ", percentage="
+				+ percentage + ", grade=" + grade + ", promoted=" + promoted + "]";
 	}
-
-//
-//	/**
-//	 * 
-//	 */
-//	public Student() {
-//		super();
-//	}
-//
-//	/**
-//	 * @param rollNo
-//	 * @param classRoom
-//	 * @param name
-//	 * @param grade
-//	 * @param division
-//	 */
-//	public Student(int rollNo, String classRoom, String name, String grade, String division) {
-//		super();
-//		this.rollNo = rollNo;
-//		this.classRoom = classRoom;
-//		this.name = name;
-//		this.grade = grade;
-//		this.division = division;
-//	}
-//
-//	@Override
-//	public String toString() {
-//		return "Student [rollNo=" + rollNo + ", classRoom=" + classRoom + ", name=" + name + ", grade=" + grade
-//				+ ", division=" + division + "]";
-//	}
-//
-//	/**
-//	 * @param args
-//	 */
-//	public void acceptStudentInfo(Student student) {
-//		Scanner scanner = new Scanner(System.in);
-//		System.out.println("Enter the Roll No");
-//		student.rollNo = scanner.nextInt();
-//
-//	}
-//
-//	public void printStudentInfo(Student student) {
-//		System.out.println("Roll No is " + student.rollNo);
-//	}
-//
-//	public static void main(String[] args) {
-////		Student student = new Student(10, "8th", "ABC", "A+", "A");
-//		Student student2 = new Student();
-////		System.out.println(student.toString());
-//		student2.acceptStudentInfo(student2);
-//		student2.printStudentInfo(student2);
-//		System.out.println(student2.toString());
-//
-////		
-//
-//	}
-//
 
 }

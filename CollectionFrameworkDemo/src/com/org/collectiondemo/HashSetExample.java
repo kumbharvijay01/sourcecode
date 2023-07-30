@@ -18,9 +18,9 @@ public class HashSetExample {
 //		1 
 		Set<Integer> hashset = new HashSet<>();
 //		2
-		HashSet<Integer> hashset1 = new HashSet<>();
-		hashset1.add(1);
-		hashset1.add(900);
+//		HashSet<Integer> hashset1 = new HashSet<>();
+//		hashset1.add(1);
+//		hashset1.add(900);
 
 		System.out.println(hashset.add(100));
 		System.out.println(hashset.add(99));
@@ -28,15 +28,22 @@ public class HashSetExample {
 		System.out.println(hashset.add(1));
 		System.out.println(hashset.add(500));
 		System.out.println(hashset.add(500));
+
+		System.out.println("--------------");
+		System.out.println(hashset.add(null));
+		System.out.println(hashset.add(null));
 		System.out.println(hashset.size());
+		System.out.println(hashset);
 
 		System.out.println(hashset.getClass());
-		ArrayListDemo arrayListDemo = new ArrayListDemo();
-		System.out.println(arrayListDemo.getClass());
+//		ArrayListDemo arrayListDemo = new ArrayListDemo();
+//		System.out.println(arrayListDemo.getClass());
 		hashset.remove(1);
-		Integer checkValue = 500;
-		System.out.println(" Value Compared using equals Method " + hashset.equals(checkValue));
+
 		System.out.println(hashset);
+//		Integer checkValue = 500;
+//		System.out.println(" Value Compared using equals Method " + hashset.equals(checkValue));
+//		System.out.println(hashset);
 //		hashset.addAll(hashset1);
 //		System.out.println("TreeSET Started Here#######");
 ////		hashset.clear();
@@ -54,12 +61,5 @@ public class HashSetExample {
 //		hashset.clear();
 
 	}
-//	100
-//	99
-//	5
-//	1
-//	500
-//	
-//	900
 
 }

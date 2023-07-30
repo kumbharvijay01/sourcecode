@@ -3,9 +3,9 @@
  */
 package com.org.exceptionhandling;
 
-import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -25,10 +25,18 @@ public class ARMExample {
 				Statement statement = connection.createStatement();) {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			System.out.println("Connection Object " + connection);
+			ResultSet resultSet = statement.executeQuery("select * from employee");
+			while (resultSet.next()) {
+				System.out.println(resultSet.getString(1) + "\t" + resultSet.getString(2));
+				System.out.println(resultSet.getString(3));
+				System.out.println(resultSet.getString(4));
+				System.out.println(resultSet.getString(5));
+			}
 		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
+		} finally {
+			System.out.println("d");
 		}
-
 	}
 
 }
