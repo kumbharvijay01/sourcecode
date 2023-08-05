@@ -1,0 +1,21 @@
+angular - for front end developent for single page applications (SCSS/HTML/typesripts)
+
+tomcat - webapp server, run the java war file
+
+eclipse - full application development eclipse (core & advance java)
+
+git - source cpde management/collaboration
+
+java/decompilor - can open any jar/war for code snippets
+
+maven - project build model, downloading dependencies, development and deployemnt model, sldc cycle
+
+mysql - database, record of all the details
+
+netbeans - IDE for , like eclipse, core java application
+
+postman - api testing
+
+node - node package manager, similar to maven, takes care of front end dependencies, download the plugins
+
+vs code - IDE for angular related
