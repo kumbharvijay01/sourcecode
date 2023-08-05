@@ -5,26 +5,12 @@ package com.org.flowdemo;
 
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 /**
  * @author vijaykumbhar
  *
  */
 public class SwitchStatementDemo {
-
-	/**
-	 * 
-	 */
-	public SwitchStatementDemo() {
-		// TODO Auto-generated constructor stub
-	}
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the Value of X");
 		int x = scanner.nextInt();
@@ -60,18 +46,47 @@ public class SwitchStatementDemo {
 		}
 		case 3: {
 			System.out.println("You have entered value 3 " + x);
-//			break;
+			break;
 		}
 		case 100: {
 			System.out.println("You have entered value " + x);
-//			break;
+			break;
 		}
-		default: {
-			System.out.println("You have entered some Wrong Value");
-		}
+//		default: {
+//			System.out.println("You have entered some Wrong Value");
+//		}
 		}
 
 		System.out.println("Execution Completed");
+		System.out.println("Enter your name");
+
+		String uname = scanner.next();
+		switch (uname) {
+		case "AJAY": {
+			System.out.println("Hello " + uname);
+			break;
+		}
+		case "VIJAY": {
+			System.out.println("Hello " + uname);
+			break;
+		}
+		case "NIDA": {
+			System.out.println("Hello " + uname);
+			break;
+		}
+		case "SAKSHI": {
+			System.out.println("Hello " + uname);
+			break;
+		}
+		case "HRITIK": {
+			System.out.println("Hello " + uname);
+			break;
+		}
+		default: {
+			System.out.println("Unable to understand the input");
+
+		}
+		}
 	}
 
 }

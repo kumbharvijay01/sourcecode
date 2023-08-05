@@ -1,13 +1,9 @@
 package com.org.flowdemo;
 
 public class WhileLoopDemo {
-
-	public WhileLoopDemo() {
-	}
-
 	public static void main(String[] args) {
-		int x = 0;
-//		while (x <= -10) {
+		int x = 1000;
+//		while (x <= 10) {
 //			System.out.println(x);
 //			x += 2;
 //		}
@@ -17,5 +13,4 @@ public class WhileLoopDemo {
 		} while (x <= 10);
 		System.out.println("Execution completed");
 	}
-
 }

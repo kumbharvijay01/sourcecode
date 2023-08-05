@@ -10,11 +10,21 @@ package com.org.flowdemo;
 public class ForLoopDemo {
 
 	public static void main(String args[]) {
-		for (int i = 1; i <= 10; i++) {
-			if (i % 2 == 0) {
-				System.out.println(i);
-				System.out.println("Some Random No: " + Math.random());
-			}
+
+		int sum = 0;
+		for (int i = 1; i < 10; i++) {
+			sum += i;
+
 		}
+		System.out.println(sum);
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("Enter number to print multiplication table");
+//		int x = scanner.nextInt();
+//		for (int i = 1; i <= 100; i++) {
+//			System.out.println(i);
+////			System.out.println(x * i);
+//
+//		}
+
 	}
 }

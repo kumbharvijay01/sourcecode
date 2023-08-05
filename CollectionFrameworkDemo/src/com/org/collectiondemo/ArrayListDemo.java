@@ -87,7 +87,6 @@ public class ArrayListDemo {
 //			System.out.println(string);
 //		}
 //		
-		
 
 		List<Employee> list = new ArrayList<>();
 		Employee employee = new Employee();
@@ -105,12 +104,12 @@ public class ArrayListDemo {
 		Employee e = new Employee();
 		e.setEmpId(100);
 		e.setName("x");
-		
+
 		System.out.println(list.contains(e));
-		
+
 		for (Employee employee2 : list) {
 			System.out.println(employee2.getName());
-			
+
 		}
 
 	}

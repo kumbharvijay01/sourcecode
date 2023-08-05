@@ -29,12 +29,15 @@ public class NonPrimitiveExample {
 		Byte h;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Anything");
+		String.valueOf(false);
 		f = Boolean.parseBoolean(scanner.next());
 //		System.out.println(Integer.parseInt(scanner.next()));
 		if (f)
 			System.out.println("True value entered by the user");
 		else
 			System.out.println("False value entered by the user");
+		
+
 
 //		int i = Integer.parseInt("3");
 //		if (i > 0) {

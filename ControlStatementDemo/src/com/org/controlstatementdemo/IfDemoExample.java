@@ -17,12 +17,19 @@ public class IfDemoExample {
 	public static void main(String args[]) {
 //		Scanner scanner = new Scanner(System.in);
 //		System.out.println("Enter the Password");
-//
+////
 //		String password = "admin";
-//		String userPassword = "admin1";
-//		if (password == userPassword) {
+//		
+//		String userPassword = scanner.next();
+//		if (password.equals(userPassword)) {
 //			System.out.println("You Are admin User");
+//			
 //		}
+//		else
+//		{
+//			System.out.println("Wrong Password entered");
+//		}
+//		
 //		System.out.println("Exection Completed");
 
 //If Statement always return the booelan values (true/false)
@@ -30,15 +37,12 @@ public class IfDemoExample {
 //		Simple If Statement Demo
 //		Scanner scanner = new Scanner(System.in);
 //		System.out.println("Enter the Number to check");
-//		int inputNo = scanner.nextInt();
-//		if (inputNo >= 0) {
-//			System.out.println("Number is positive");
-//		}
 //		Simple If else Statement Demo
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the Number to check");
 		int inputNo = scanner.nextInt();
 		IfDemoExample ifDemoExample = new IfDemoExample();
 		boolean returnFlag = ifDemoExample.checkNumber(inputNo);
+		System.out.println(returnFlag);
 	}
 }

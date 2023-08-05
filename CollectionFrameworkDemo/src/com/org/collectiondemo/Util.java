@@ -12,7 +12,7 @@ public class Util {
 		str = filterStr.replaceAll("-", "");
 		return Integer.parseInt(str);
 	}
-	27 AADCB6018P 2ZC
+//	27 AADCB6018P 2ZC
 	// XXX: replace with java.util.UUID
 
 	public static void main(String[] args) {
